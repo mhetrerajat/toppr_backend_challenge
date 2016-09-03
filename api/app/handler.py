@@ -1,10 +1,3 @@
-"""
-    This modules has functions bind to particular route. Making request
-    for that route will excute those functions and returns appropriate results.
-    Route mentioned for function is just half URI i.e. it exculdes hostname.
-    Attributes:
-        LAT_LNG_RANGE (list) : List of all possible values for latitude and longitude.
-"""
 from datetime import datetime
 from flask import jsonify, request
 from app import db, app, Serializer, Battle
