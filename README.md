@@ -11,22 +11,22 @@ python3 run.py
 
 
 ### Features
-1. Add and Book Cars. Car is allotted to customer according to their preference and their location. 
-2. User Input Validations
-3. Customer will be given nearest available car to their location.
-4. If car/taxis are not available then, customer’s request will be rejected.
-5. Automatic booking amount calculation after trip completion. Car is charged as 1 dogecoin per minute and pink cars are charged for extra 5 dogecoin.
-6. Test cases are implemented. Refer **test.py** in **api** directory.
-7. Both API and WebApp are deployed on heroku.
-8. Pylint is used for code analysis.
+1. Possible URLS
+	- GET : [https://gotapi.herokuapp.com/stats](https://gotapi.herokuapp.com/stats) : Get GOT Stats
+	- GET : [https://gotapi.herokuapp.com/list](https://gotapi.herokuapp.com/list) : Get entire list of battles
+	- GET : [https://gotapi.herokuapp.com/list?type=region](https://gotapi.herokuapp.com/list?type=region) : Get distinct region of battles and number of battles at that region
+	- GET : [https://gotapi.herokuapp.com/list?type=location](https://gotapi.herokuapp.com/list?type=location) : Get distinct locations of battles and number of battles at that location
+	- GET : [https://gotapi.herokuapp.com/count](https://gotapi.herokuapp.com/count) : Get total count of battles
+	- GET : [https://gotapi.herokuapp.com/search?name=<YOUR_QUERY>](https://gotapi.herokuapp.com/search?name=) : Search by name
+	- GET : [https://gotapi.herokuapp.com/search?king=<YOUR_QUERY>](https://gotapi.herokuapp.com/search?king=) : Search by king
+	- GET : [https://gotapi.herokuapp.com/search?type=<YOUR_QUERY>](https://gotapi.herokuapp.com/search?type=) : Search by type
+	- GET : [https://gotapi.herokuapp.com/search?location=<YOUR_QUERY>](https://gotapi.herokuapp.com/search?location=) : Search by location
+2. API is deployed on heroku.
+3. Pylint is used for code analysis.
 
 
 ### Deployment
-- API : [FuberAPI](https://fuberapi.herokuapp.com/)
-- WebApp : [FuberAPP](https://fuberapp.herokuapp.com/)
+- API : [GOTApi](https://gotapi.herokuapp.com/)
 
 ### Notes
-- Both API and WebApp are implemented in Python with framework called **Flask**.
-- **Jinja2** is used as templating language for WebApp.
-- Python’s **unittest** module is used to write test cases.
-- Python’s **requests** module is used to make http request to API from WebApp.
+- API is implemented in Python with framework called **Flask**.
