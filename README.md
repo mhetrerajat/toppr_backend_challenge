@@ -1,4 +1,4 @@
-# Quintype Assignment
+# Toppr Backend Challenge
 
 ### Usage
 Program requires Python 3.5.2
@@ -8,11 +8,7 @@ To run api
 cd api
 python3 run.py
 ```
-To run webapp
-```
-cd webapp
-python3 run.py
-```
+
 
 ### Features
 1. Add and Book Cars. Car is allotted to customer according to their preference and their location. 
